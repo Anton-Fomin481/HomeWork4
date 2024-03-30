@@ -192,6 +192,9 @@ body {
   color: #2e2f42;
   margin-bottom: 72px;
 }
+.our-team:hover {
+  transform: translateY(0%);
+}
 .one-list {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
