@@ -384,12 +384,12 @@ body {
   max-width: 264px;
 }
 .foot-p-two {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 .foot-list {
   list-style-type: none;
@@ -408,6 +408,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot-link:hover {
   background-color: #31d0aa;
