@@ -405,13 +405,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-.foot-link:focus {
+.foot-link:hover {
   background-color: #31d0aa;
 }
-.foot-link:hover {
+.foot-link:focus {
   background-color: #31d0aa;
 }
 .foot-icon {
   fill: #f4f4fd;
+}
+.foot-use {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*FOOTER*/
