@@ -10,8 +10,7 @@ p {
 /*/////////////HEADER/////////////*/
 .header {
   border-bottom: 1px solid #e7e9fc;
-  height: 72px;
-  width: 1440px;
+
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -41,6 +40,9 @@ p {
   align-items: center;
   margin-right: auto;
 }
+a {
+  text-decoration: none;
+}
 .main-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -50,7 +52,6 @@ p {
   text-transform: uppercase;
   color: #404bbf;
   margin-right: 76px;
-  position: relative;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -60,7 +61,7 @@ p {
 .main-logo-part2 {
   color: #2e2f42;
 }
-.navigation::after {
+.current::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -70,18 +71,20 @@ p {
   background-color: #404bbf;
   border-radius: 2px;
 }
-
+.current {
+  color: #404bbf;
+  position: relative;
+}
 .navigation {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   padding: 24px 0;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
 }
 .navigation:hover {
   color: #404bbf;
@@ -89,12 +92,17 @@ p {
 .navigation:focus {
   color: #404bbf;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 .spisok {
   list-style-type: none;
   display: flex;
   margin-right: 40px;
   gap: 40px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 /*HEADER*/
 /*\\\\\\\\\\\\\\\\\\MAIN/////////////*/
@@ -148,7 +156,7 @@ p {
     url(../images/backround.jpg);
   max-width: 1440px;
   height: 600px;
-  top: 72px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -170,20 +178,25 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: center;
-  margin-bottom: 8px;
 }
 .strategy:hover {
   transform: translateY(0%);
+}
+.ruo-goal {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+
+  margin: auto;
 }
 .our-goal {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+
   margin: auto;
-  margin-bottom: 48px;
 }
 .our-goal:hover {
   transform: translateY(0%);
@@ -231,7 +244,6 @@ p {
 }
 .kok {
   width: calc((100% - 72px) / 4);
-  margin-bottom: 8px;
 }
 .shawa {
   list-style-type: none;
@@ -242,6 +254,7 @@ p {
 }
 .list-three-div {
   padding: 32px 0;
+  text-align: center;
 }
 .secfour {
   padding-top: 120px;
@@ -364,10 +377,12 @@ p {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-.foot-container {
-  display: flex;
-  align-items: baseline;
+.foot-hook {
   margin-right: 120px;
+}
+.foot-container {
+  align-items: baseline;
+  display: flex;
 }
 .foot-logo {
   display: inline-block;
@@ -398,15 +413,7 @@ p {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
+
 .foot-list {
   list-style-type: none;
   display: flex;
